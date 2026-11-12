@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danilo Cascone – Junior Backend Developer</title>
+<meta name="description" content="Portfolio di Danilo Cascone, laureato in Informatica e Junior Backend Developer. Progetti: FurhatAPI e YODA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#0d1424; --surface:#141d33; --line:#26324d;
+  --text:#e6eaf2; --muted:#9aa6bf; --accent:#8cc2ff;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-size:.95rem}
+header.top a{color:var(--muted);text-decoration:none;margin-left:1.25rem}
+header.top a:hover{color:var(--text)}
+header.top strong{font-family:var(--head);font-weight:700;color:var(--text)}
+.hero{padding:4.5rem 0 3.5rem}
+.hero h1{font-family:var(--head);font-weight:700;font-size:clamp(2.75rem,10vw,5rem);line-height:1;letter-spacing:-.03em;margin:0 0 1rem}
+.hero .role{font-family:var(--head);font-weight:500;font-size:clamp(1.25rem,4vw,1.6rem);color:var(--accent);margin:0 0 1.5rem}
+.hero p{max-width:36rem;color:var(--muted);margin:0 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.65rem 1.2rem;border:1px solid var(--accent);border-radius:6px;text-decoration:none;font-weight:500}
+.btn.fill{background:var(--accent);color:var(--bg)}
+.btn.fill:hover{background:#fff;border-color:#fff;color:var(--bg)}
+.btn.ghost:hover{background:var(--surface)}
+.hero-head{display:flex;align-items:center;gap:1.75rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.hero-head .photo{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid var(--line);flex:none}
+.hero-head h1{margin:0 0 .5rem;font-size:clamp(2.25rem,6vw,3.5rem)}
+.hero-head .role{margin:0}
+.project figure{margin:0 0 1.25rem}
+.project figure img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.project figcaption{margin-top:.5rem;font-size:.85rem;color:var(--muted)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-weight:700;font-size:1.75rem;letter-spacing:-.01em;margin:0 0 1.75rem}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.75rem}
+.project+.project{margin-top:1.5rem}
+.project h3{font-family:var(--head);font-weight:700;font-size:1.5rem;margin:0 0 .25rem}
+.project .sub{color:var(--muted);font-size:.95rem;margin:0 0 1rem}
+.project p{margin:0 0 1rem}
+.project ul{margin:0 0 1.25rem;padding-left:1.2rem}
+.project li{margin-bottom:.4rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0 0 1.25rem;padding:0}
+.tags li{margin:0;padding:.15rem .6rem;border:1px solid var(--line);border-radius:999px;font-size:.85rem;color:var(--muted)}
+.links a{margin-right:1.25rem;font-weight:500}
+dl.skills{margin:0}
+dl.skills div{display:grid;grid-template-columns:11rem 1fr;gap:.25rem 1.5rem;padding:.75rem 0;border-bottom:1px solid var(--line)}
+dl.skills div:last-child{border-bottom:0}
+dl.skills dt{font-weight:500}
+dl.skills dd{margin:0;color:var(--muted)}
+.edu{margin:0}
+.edu strong{font-weight:500}
+.edu span{color:var(--muted)}
+.contact ul{list-style:none;margin:0 0 1.5rem;padding:0}
+.contact li{margin-bottom:.35rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:560px){
+  .hero{padding-top:3rem}
+  dl.skills div{grid-template-columns:1fr}
+  header.top a{margin-left:.9rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>DC</strong>
+    <nav aria-label="Principale">
+      <a href="#progetti">Progetti</a><a href="#competenze">Competenze</a><a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-head">
+        <!-- Metti la foto nella stessa cartella con questo nome (meglio sotto i 200 KB) -->
+        <img class="photo" src="laurea.jpg" width="200" height="200" alt="Danilo Cascone il giorno della laurea">
+        <div>
+          <h1>Danilo Cascone</h1>
+          <p class="role">Junior Backend Developer</p>
+        </div>
+      </div>
+      <p>Laureato in Informatica all’Università degli Studi di Salerno. Mi piace progettare la parte che non si vede: API, dati, automazione e qualità del codice. Cerco la mia prima esperienza in un team di sviluppo.</p>
+      <div class="btns">
+        <a class="btn fill" href="#progetti">Vedi i progetti</a>
+        <!-- Metti il tuo CV in PDF nella stessa cartella con questo nome -->
+        <a class="btn ghost" href="CV_Danilo_Cascone.pdf">Scarica il CV</a>
+      </div>
+    </div>
+
+    <section id="progetti">
+      <h2>Progetti</h2>
+
+      <article class="project">
+        <h3>FurhatAPI</h3>
+        <p class="sub">Progetto di tesi, Università di Salerno</p>
+        <!-- Metti la foto del robot nella stessa cartella con questo nome -->
+        <figure>
+          <img src="furhat.jpg" width="1200" height="800" loading="lazy" alt="Il robot sociale Furhat nel laboratorio dell’università">
+          <figcaption>Il robot Furhat in laboratorio, durante lo sviluppo della tesi.</figcaption>
+        </figure>
+        <p>Un sistema che permette al robot sociale Furhat di raccontare storie a piccoli gruppi di bambini con DSA, di capire come reagiscono e di rispondere in modo incoraggiante e mai giudicante.</p>
+        <ul>
+          <li>Architettura software multimodale in tempo reale, che unisce visione artificiale, riconoscimento vocale e linguaggio naturale.</li>
+          <li>Face tracking con YuNet, riconoscimento delle espressioni con HSEmotion e riconoscimento persistente dei volti con ArcFace (ONNX).</li>
+          <li>Sentiment analysis delle risposte verbali tramite OpenAI API, con cache per ridurre le chiamate sulle risposte semplici.</li>
+          <li>Algoritmo decisionale basato sul «rinforzo collettivo», che valuta ogni partecipante incrociando volto e voce.</li>
+        </ul>
+        <ul class="tags" aria-label="Tecnologie">
+          <li>Python</li><li>OpenAI API</li><li>OpenCV</li><li>ONNX</li><li>WebSocket</li><li>Furhat</li>
+        </ul>
+        <p class="links"><a href="https://github.com/DaniloCascone/FurhatAPI">Codice su GitHub</a></p>
+      </article>
+
+      <article class="project">
+        <h3>YODA</h3>
+        <p class="sub">Progetto per l’esame di Ingegneria del Software, in team con metodo Scrum</p>
+        <!-- Quando hai uno screenshot di YODA, salvalo come yoda.png e togli i commenti qui sotto
+        <figure>
+          <img src="yoda.png" width="1200" height="750" loading="lazy" alt="Schermata della piattaforma YODA">
+          <figcaption>Schermata della piattaforma YODA.</figcaption>
+        </figure>
+        -->
+        <p>Una piattaforma web per il mentoring informatico, in cui ogni utente accede solo a ciò che il suo ruolo prevede.</p>
+        <ul>
+          <li>Analisi dei requisiti e progettazione con documenti RAD, ODD e SDD, diagrammi UML e pattern MVC.</li>
+          <li>Autenticazione e controllo degli accessi per ruolo (RBAC).</li>
+          <li>Pipeline CI/CD con GitHub Actions e Quality Gate per controllare la qualità del codice a ogni modifica.</li>
+        </ul>
+        <ul class="tags" aria-label="Tecnologie">
+          <li>React</li><li>Node.js</li><li>Firebase</li><li>GitHub Actions</li><li>SonarCloud</li><li>Cypress</li>
+        </ul>
+        <p class="links"><a href="https://github.com/BraindeadHermit/yoda">Codice su GitHub</a></p>
+      </article>
+    </section>
+
+    <section id="competenze">
+      <h2>Competenze</h2>
+      <dl class="skills">
+        <div><dt>Linguaggi</dt><dd>Python, Java, C++, C, JavaScript, SQL</dd></div>
+        <div><dt>Backend e dati</dt><dd>Node.js, MySQL, SQLite, Firebase</dd></div>
+        <div><dt>DevOps</dt><dd>Git, Docker, GitHub Actions, SonarCloud, Linux</dd></div>
+        <div><dt>Testing</dt><dd>Cypress</dd></div>
+        <div><dt>Metodologie</dt><dd>Scrum, Agile</dd></div>
+        <div><dt>Lingue</dt><dd>Italiano madrelingua, inglese intermedio</dd></div>
+      </dl>
+    </section>
+
+    <section id="formazione">
+      <h2>Formazione</h2>
+      <p class="edu"><strong>Laurea triennale in Informatica (L-31)</strong><br><span>Università degli Studi di Salerno, 2021–2026</span></p>
+      <p class="edu" style="margin-top:1rem"><strong>Diploma in Informatica</strong><br><span>I.T.I. «Renato Elia», Castellammare di Stabia, 2016–2021</span></p>
+    </section>
+
+    <section id="contatti" class="contact">
+      <h2>Contatti</h2>
+      <p>Sono disponibile per colloqui e per iniziare a lavorare. Scrivimi:</p>
+      <ul>
+        <li><a href="mailto:danilocascone@outlook.it">danilocascone@outlook.it</a></li>
+        <li><a href="https://github.com/DaniloCascone">github.com/DaniloCascone</a></li>
+        <!-- Sostituisci con l'URL del tuo profilo LinkedIn -->
+        <li><a href="https://www.linkedin.com/in/danilo-cascone-43a190309/">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© 2026 Danilo Cascone</footer>
+</div>
+</body>
+</html>
